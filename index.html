@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./output.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles.scss" />
-  <link rel="stylesheet" href="./output.css" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <div class="snap-y snap-mandatory h-screen overflow-scroll">
+      <header
+        class="flex items-center justify-center flex-col bg-gradient-to-r from-blue-300 to-cyan-300 snap-start w-screen h-screen"
+      >
+        <nav
+          class="bg-black text-white fixed top-0 right-0 left-0 nav-font-family"
+        >
+          <ul class="flex mt-3 gap-5 justify-center pb-3">
+            <li>
+              <a href="aboutMe.html">O mnie</a>
+            </li>
+            <li>
+              <a href="project.html">Projekty</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <!-- ZAJECIA Z DNIA 10.02 -->
+        <h1
+          class="font-mono p-10 font-extrabold text-3xl mt-20 text-white font-family"
+        >
+          PORTFOLIO
+        </h1>
+        <div class="pb-20">
+          <img
+            class="rounded-2xl shadow"
+            src="https://www.ifirma.pl/wp-content/uploads/2021/05/ile-zarabia-fotograf.jpg"
+            alt=""
+            width="500"
+            height="500"
+          />
+        </div>
+      </header>
 
-  <!-- <header class="header-fixed">
-    nasz header
-  </header> -->
-  <!-- roznica miedzy h2-h6 -->
-  <!-- roznica miedzy <span>, <a>, <p> -->
-  <!-- span - krótki tekst -->
-  <!-- a - link -->
-  <!-- p - akapit/dlugi tekst -->
-  <!-- tagi semantyczne html5 -->
-  <!-- atl tag w img -->
+      <section class="h-screen snap-start w-screen">
+        <h2 class="text-lg h2-font-family text-center py-12 font-extrabold">
+          Tytuł
+        </h2>
+        <p class="my-8 mx-10 mx-10">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime
+          consectetur odit saepe, exercitationem repudiandae minus? Modi iusto
+          repellendus, unde nobis et itaque, sint enim quis molestiae voluptate
+          iure non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+          maxime consectetur odit saepe, exercitationem repudiandae minus? Modi
+          iusto repellendus, unde nobis et itaque, sint enim quis molestiae
+          voluptate iure non.
+        </p>
+      </section>
 
-  <!-- 1 -->
-  <!-- <label for="first-name">
-    Imie:
-    <input type="checkbox" id="first-name">
-  </label> -->
-  <!-- 2 -->
-  <!-- <div>
-    <label for="">Nazwisko:</label>
-    <input type="checkbox">
-  </div>
+      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
+        <img src="./assets/bee.jpg" alt="pszczoła" class="w-4/5 mt-20" />
+        <button
+          class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
+        >
+          <a href="#">Zobacz</a>
+        </button>
+      </article>
 
-  <section class="wrapper">
-    <article class="block-article">2
-    </article>
-    <article class="block-article">2
-    </article>
-    <article class="block-article">3</article>
-    <article class="block-article">4</article>
-    <article class="block-article">5</article>
-    <article class="block-article">6</article>
-    <article class="block-article">7</article>
-    <article class="block-article">8</article>
-    <article class="block-article">9</article>
-    <article class="block-article">10</article>
-  </section>
-  <section class="relative-wrapper">
-    <h2>Pozycja absolutna</h2>
-    <div class="absolute-block">
-      nasz div
+      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
+        <img src="./assets/butterfly.png" alt="motyl" class="w-4/5 mt-20" />
+        <button
+          class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
+        >
+          <a href="#">Zobacz</a>
+        </button>
+      </article>
+
+      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
+        <img src="./assets/squirrel.jpg" alt="wiewiórka" class="w-4/5 mt-20" />
+
+        <button
+          class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
+        >
+          <a href="#">Zobacz</a>
+        </button>
+      </article>
+
+
+      <footer
+        class="snap-start w-screen relative bottom-0 bg-black text-white font-extrabold p-3 text-center"
+      >
+        <a href="mailto:kosekkunegunda@gmail.com"
+          >Kontakt: kontakt@kontakt.pl</a
+        >
+      </footer>
     </div>
-  </section>
-  <section class="sticky-wrapper">
-    <h2>Position sticky</h2>
-    <div class="sticky-block">
-      sticky div
-    </div>
-  </section> -->
 
-  <!-- ZAJECIA Z DNIA 11.02 -->
-
-  <h1 class="p-4 text-3xl font-bold underline text-yellow-600">
-    Hello world!
-  </h1>
-
-  <!-- Przyklad uzycia kontenerow -->
-  <header class="bg-violet-200">
-    <div class="container mx-auto">
-      <ul>
-        <li>link</li>
-      </ul>
-    </div>
-  </header>
-  <main class="container mx-auto">
-    main content
-  </main>
-  <footer class="bg-violet-200">
-    <div class="container mx-auto">
-      footer
-    </div>
-  </footer>
-</body>
-
+  </body>
 </html>
