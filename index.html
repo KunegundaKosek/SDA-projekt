@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+
     <link rel="stylesheet" href="./styles.scss" />
     <link rel="stylesheet" href="./output.css" />
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
+
     <div class="snap-y snap-mandatory h-screen overflow-scroll">
       <header
         class="flex items-center justify-center flex-col bg-gradient-to-r from-blue-300 to-cyan-300 snap-start w-screen h-screen"
@@ -34,7 +36,7 @@
         </nav>
 
         <h1
-          class="font-mono p-10 font-extrabold text-3xl mt-20 text-white font-family"
+          class="font-display font-mono p-2 font-extrabold text-3xl mt-20 text-white font-family"
         >
           PORTFOLIO
         </h1>
@@ -43,17 +45,18 @@
             class="rounded-2xl shadow"
             src="https://www.ifirma.pl/wp-content/uploads/2021/05/ile-zarabia-fotograf.jpg"
             alt=""
-            width="500"
-            height="500"
           />
         </div>
       </header>
 
       <section class="h-screen snap-start w-screen">
-        <h2 class="text-lg h2-font-family text-center py-12 font-extrabold">
-          Tytuł
-        </h2>
-        <p class="my-8 mx-10 mx-10">
+
+
+        <div class="h-100 text-white"></div>
+
+        
+        <h2 class="text-lg h2-font-family text-center font-extrabold">Tytuł</h2>
+        <p class="mx-10 mx-10 font-customFont">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime
           consectetur odit saepe, exercitationem repudiandae minus? Modi iusto
           repellendus, unde nobis et itaque, sint enim quis molestiae voluptate
@@ -64,8 +67,32 @@
         </p>
       </section>
 
-      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
-        <img src="./assets/bee.jpg" alt="pszczoła" class="w-4/5 mt-20" />
+      <article
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center"
+      >
+        <div class="h-200 text-white"></div>
+
+        <img
+          src="./assets/bee.jpg"
+          alt="pszczoła"
+          class="w-1/2 mt-20 rounded-2xl shadow"
+        />
+        <button
+          class="border-2 border-sky-500 p-3 m-5 mt-10 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
+        >
+          <a href="#">Zobacz</a>
+        </button>
+      </article>
+
+      <article
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center"
+      >
+        <div class="h-200 text-white"></div>
+        <img
+          src="./assets/butterfly.png"
+          alt="motyl"
+          class="w-1/2 mt-20 rounded-2xl shadow"
+        />
         <button
           class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
         >
@@ -73,17 +100,15 @@
         </button>
       </article>
 
-      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
-        <img src="./assets/butterfly.png" alt="motyl" class="w-4/5 mt-20" />
-        <button
-          class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
-        >
-          <a href="#">Zobacz</a>
-        </button>
-      </article>
-
-      <article class="h-screen snap-start w-screen flex flex-col items-center snap-center">
-        <img src="./assets/squirrel.jpg" alt="wiewiórka" class="w-4/5 mt-20" />
+      <article
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center"
+      >
+        <div class="h-200 text-white"></div>
+        <img
+          src="./assets/squirrel.jpg"
+          alt="wiewiórka"
+          class="w-1/2 mt-20 rounded-2xl shadow"
+        />
 
         <button
           class="border-2 border-sky-500 p-3 m-5 rounded-xl w-1/4 bg-sky-500 hover:bg-sky-700 text-white"
@@ -91,7 +116,6 @@
           <a href="#">Zobacz</a>
         </button>
       </article>
-
 
       <footer
         class="snap-start w-screen relative bottom-0 bg-black text-white font-extrabold p-3 text-center"
@@ -101,6 +125,5 @@
         >
       </footer>
     </div>
-
   </body>
 </html>

@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-</head>
-<body>
-      <h1>Projekty</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./output.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <div class="snap-y snap-mandatory h-screen overflow-scroll mb-0">
+      <header
+        class="flex items-center justify-center flex-col bg-gradient-to-r from-blue-300 to-cyan-300 snap-start w-screen h-screen"
+      >
+        <nav
+          class="bg-black text-white fixed top-0 right-0 left-0 nav-font-family"
+        >
+          <ul class="flex mt-3 gap-5 justify-center pb-3">
+            <li>
+              <a href="aboutMe.html">O mnie</a>
+            </li>
+            <li>
+              <a href="project.html">Projekty</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1
+          class="font-display font-mono p-2 font-extrabold text-3xl mt-20 text-white font-family"
+        >
+          PROJEKTY
+        </h1>
+        <div class="pb-20">
+          <img
+            class="rounded-2xl shadow"
+            src="https://www.ifirma.pl/wp-content/uploads/2021/05/ile-zarabia-fotograf.jpg"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <div
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center w-3/4"
+      >
+        <div class="h-200 text-white"></div>
+        <video controls>
+          <source src="./assets/sarna.mp4" />
+        </video>
+      </div>
+
+      <section class="h-screen snap-start w-screen">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7MgF6YnhoJs?si=9SLVXNJ8nfok3mEG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- <section
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center"
+      >
+
+      <source> -->
+      <!-- <video
+          width="1000"
+          height="700"
+          src="./assets/sarna.mp4"
+          frameborder="0"
+          allowfullscreen
+        ></video>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aeZiqVsQpu0?si=99j3CObFpBiavSKB"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe> -->
+      <!-- </section>
+
+      <section
+        class="h-screen snap-start w-screen flex flex-col items-center snap-center"
+      >
+        <img src="./assets/bee.jpg" alt="aaaaaaaaaa" />
+      </section> -->
+    </div>
+  </body>
 </html>
